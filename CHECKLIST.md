@@ -1,3 +1,9 @@
+## Software in supply chain that is assumed to be hardened
+- container runtime (Docker Enterprise, Podman)
+- container platform (OpenShift)
+- virtual machine / bare metal
+- networking rules at every level
+
 ## COMPLIANCE
 - STIG base image
 - STIG application

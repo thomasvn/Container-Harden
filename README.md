@@ -1,22 +1,7 @@
-## Current hardening procedure
-1. STIG the base image
-2. STIG the application
-3. Clean container scan (Anchore for vulnerabilities, OpenSCAP for compliance)
-
-OR
-
-1. Use a STIG'd / hardened application image from Ironbank
+Practicing and documenting container hardening procedures. To see a full list of resources about container hardening, visit https://thomasvn.dev/posts/2021-03-19/
 
 
-## Software in supply chain that is assumed to be hardened
-- container runtime (Docker Enterprise, Podman)
-- container platform (OpenShift)
-- virtual machine / bare metal
-- networking rules at every level
-
-
-## References
-- https://software.af.mil/dsop/documents/
-- https://cloudsecdocs.com
-- https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html
-- https://github.com/OWASP/Docker-Security
+## In this Repo
+* `httpd` -> STIG an Apache Webserver
+* `template` -> Assuming a STIG’d `httpd`, write a Dockerfile with best practice for secure config
+* `CHECKLIST.md` -> Compilation of security related tasks to consider when creating your image `Dockerfile` and deploying your image `docker run`.
